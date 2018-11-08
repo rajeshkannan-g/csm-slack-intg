@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_csm_slack.CSMSlackUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CSMSlackUtils</name>
+        <script><![CDATA[var CSMSlackUtils = Class.create();
+CSMSlackUtils.prototype = {
+	initialize: function() {
+	},
+	
+	htmlEscape: function(str) {
+		return str
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;');
+	},
+	
+	createPayload: function(inputs, defaultFields) {
+		var payload = {};
+			payload.text = this.htmlEscape(inputs.message);
+			
+			if (!gs.nil(inputs.channel.trim()))
+				payload.channel = inputs.channel.trim();
+			
+			if (!gs.nil(inputs.icon.trim()))
+				payload.icon_emoji = inputs.icon.trim();
+			
+			if (!gs.nil(inputs.username.trim()))
+				payload.username = inputs.username.trim();
+			
+			payload.attachments = [];
+			
+			var fields = [];
+			var fieldsToSend = defaultFields.split(',');
+			var _this = this;
+			
+			fieldsToSend.forEach(function(fieldName) {
+				fieldName = fieldName.trim();
+				var fieldValue = inputs.record.getDisplayValue(fieldName) || '';
+				var isShort = (fieldValue.length > 30 || fieldName == 'short_description') ? false : true;
+				
+				if (!gs.nil(fieldValue)) {
+					fieldValue = _this.htmlEscape(fieldValue);
+					fields.push({
+						"title": inputs.record[fieldName].getLabel(),
+						"value": fieldValue,
+						"short": isShort
+					});
+				}
+			});
+			
+			var incidentNumber = inputs.record.getDisplayValue('number');
+			var recordLink = inputs.record.getLink();
+			var incidentLink = gs.getProperty('glide.servlet.uri') + recordLink;
+			var incidentUrl = '<' + incidentLink + '|' + incidentNumber + '>';
+			
+			payload.attachments.push({
+				text: incidentUrl,
+				fallback: inputs.message,
+				fields: fields
+			});
+			
+			return payload;
+		},
+		
+		postMessageError: function(error) {
+			var output;
+			switch (error) {
+				case "channel_not_found":
+					output = "Invalid Channel ID";
+					break;
+				case "user_not_found":
+				case "users_not_found":
+					output = "User Not Found";
+					break;
+				case "msg_too_long":
+					output = "Message Text Too Long";
+					break;
+				case "no_text":
+					output = "Message Text is Missing";
+					break;
+				case "not_authed":
+				case "not_in_channel":
+				case "restricted_action":
+				case "is_archived":
+				case "restricted_action_read_only_channel":
+				case "restricted_action_thread_only_channel":
+				case "rate_limited":
+					output = "Unauthorized. Please Check Oauth Token.";
+					break;
+				case "invalid_auth":
+				case "account_inactive":
+				case "token_revoked":
+					output = "Insufficient Permissions. Please Check OAuth Token and scope permission";
+					break;
+				case "no_permission":
+				case "user_is_restricted":
+				case "user_is_bot":
+					output = "Forbidden Request. Please Check OAuth Token and scope permission";
+					break;
+				case "invalid_arg_name":
+				case "invalid_array_arg":
+				case "invalid_charset":
+				case "invalid_form_data":
+				case "invalid_post_type":
+				case "missing_post_type":
+					output = "Invalid Connection";
+					break;
+				default:
+					output = "Unknown Error";
+					break;
+			}
+			return output;
+		},
+		
+		scimError: function(error) {
+			var output;
+			switch (error) {
+				case "no_such_group":
+					output = "Group Not Found";
+					break;
+				case "user_not_found":
+				case "no_such_user":
+				case "username_required":
+				case "invalid_username":
+					output = "User Name is Invalid or Missing";
+					break;
+				case "unknown_user":
+					output = "User Not Found";
+					break;
+				case "username_taken":
+					output = "Username Already Exists";
+					break;
+				case "username_too_long":
+					output = "User Name Too Long";
+					break;
+				case "bad_email_address":
+					output = "User's Email is Invalid or Already Taken";
+					break;
+				case "invalid_display_name":
+				case "invalid_name_specials":
+					output = "Display Name is Invalid or Missing";
+					break;
+				case "cannot_disable_bot_user_with_scim":
+				case "cannot_disable_primary_owner":
+				case "cannot_modify_owner":
+					output = "Insufficient Permissions. Please Check OAuth Token and scope permission";
+					break;
+				case "non_org_teams_only":
+				case "plus_teams_only":
+				case "too_many_requests":
+				case "missing_authentication":
+					output = "Forbidden Request. Please Check OAuth Token and scope permission";
+					break;
+				case "bad_endpoint":
+				case "invalid_query":
+					output = "Invalid Connection";
+					break;
+				default:
+					output = "Unknown Error";
+					break;
+			}
+			return output;
+		},
+		
+		type: 'CSMSlackUtils'
+	};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:49:04</sys_created_on>
+        <sys_id>ab1eca19dbe16700e9237ffdbf961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CSMSlackUtils</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_script_include_ab1eca19dbe16700e9237ffdbf961903</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 15:49:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

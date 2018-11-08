@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Task Slack Channel" max_length="40" name="x_snc_csm_slack_task_slack_channel" type="collection">
+        <element label="Slack Channel ID" max_length="40" name="slack_channel_id" type="string"/>
+        <element display="true" label="Slack Channel Name" max_length="40" name="slack_channel_name" type="string"/>
+        <element label="Task" max_length="32" name="task" reference="task" type="reference"/>
+        <index name="index">
+            <element name="task"/>
+        </index>
+    </element>
+</database>

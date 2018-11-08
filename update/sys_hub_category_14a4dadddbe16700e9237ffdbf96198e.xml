@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_category">
+    <sys_hub_category action="INSERT_OR_UPDATE">
+        <name>Task Slack Management</name>
+        <order>100</order>
+        <sys_class_name>sys_hub_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 16:12:17</sys_created_on>
+        <sys_id>14a4dadddbe16700e9237ffdbf96198e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Task Slack Management</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_hub_category_14a4dadddbe16700e9237ffdbf96198e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 17:22:26</sys_updated_on>
+    </sys_hub_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=14a4dadddbe16700e9237ffdbf96198e"/>
+</record_update>

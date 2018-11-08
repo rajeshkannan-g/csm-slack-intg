@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Create Slack Channel for Case</description>
+        <internal_name>create_slack_channel_for_case</internal_name>
+        <label_cache>[{"name":"d04abc5e-de0d-47f8-94f2-685d08b1e184.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"d04abc5e-de0d-47f8-94f2-685d08b1e184.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice"},{"name":"698b35a3-4576-4745-952c-8b9b2adf6909.table_name","label":"2➛Task Slack Channel Table","reference":"x_snc_csm_slack_task_slack_channel","reference_display":"Task Slack Channel","type":"table_name","base_type":"table_name"},{"name":"698b35a3-4576-4745-952c-8b9b2adf6909.record","label":"2➛Task Slack Channel Record","reference":"x_snc_csm_slack_task_slack_channel","reference_display":"Task Slack Channel","type":"reference","base_type":"reference"},{"name":"e18a4f24-6fa5-4470-85bd-2b41fb99a298.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"e18a4f24-6fa5-4470-85bd-2b41fb99a298.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice"},{"name":"01ac480f-d053-4bc4-aa69-25143ec4928e.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"01ac480f-d053-4bc4-aa69-25143ec4928e.channel_name","label":"1➛Channel Name","reference_display":"Channel Name","type":"string","base_type":"string"},{"name":"01ac480f-d053-4bc4-aa69-25143ec4928e.channel_id","label":"1➛Channel ID","type":"string","base_type":"string"},{"name":"01ac480f-d053-4bc4-aa69-25143ec4928e.status","label":"1➛Status","reference_display":"Status","type":"string","base_type":"string"},{"name":"Created_1.current","label":"Trigger➛Case Record","reference":"sn_customerservice_case","reference_display":"Case","type":"reference","base_type":"reference"},{"name":"784b2a41-34f9-4369-bc0a-e66afae3ff63.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"784b2a41-34f9-4369-bc0a-e66afae3ff63.channel_name","label":"1➛Channel Name","reference_display":"Channel Name","type":"string","base_type":"string"},{"name":"784b2a41-34f9-4369-bc0a-e66afae3ff63.channel_id","label":"1➛Channel ID","reference_display":"Channel ID","type":"string","base_type":"string"},{"name":"784b2a41-34f9-4369-bc0a-e66afae3ff63.status","label":"1➛Status","reference_display":"Status","type":"string","base_type":"string"},{"name":"Created_1.current.account.name","label":"Trigger➛Case Record➛Account➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"customer_account","column_name":"name"},{"name":"Created_1.current.number","label":"Trigger➛Case Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"sn_customerservice_case","column_name":"number"},{"name":"082b783c-cbde-49f0-a992-5b5ffa1cf1e6.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"082b783c-cbde-49f0-a992-5b5ffa1cf1e6.channel_name","label":"1➛Channel Name","reference_display":"Channel Name","type":"string","base_type":"string"},{"name":"082b783c-cbde-49f0-a992-5b5ffa1cf1e6.channel_id","label":"1➛Channel ID","reference_display":"Channel ID","type":"string","base_type":"string"},{"name":"082b783c-cbde-49f0-a992-5b5ffa1cf1e6.channel","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice"},{"name":"Created_1.current.assigned_to","label":"Trigger➛Case Record➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_customerservice_case","column_name":"assigned_to"},{"name":"Created_1.current.assigned_to.name","label":"Trigger➛Case Record➛Assigned to➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"af531c84-ea25-432d-ac34-4878ae418a53.status","label":"1➛Status","reference_display":"Status","type":"string","base_type":"string"},{"name":"af531c84-ea25-432d-ac34-4878ae418a53.channel_id","label":"1➛Channel ID","reference_display":"Channel ID","type":"string","base_type":"string"},{"name":"af531c84-ea25-432d-ac34-4878ae418a53.channel_name","label":"1➛Channel Name","reference_display":"Channel Name","type":"string","base_type":"string"},{"name":"af531c84-ea25-432d-ac34-4878ae418a53.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"},{"name":"7f52ec9d-4dfb-4b31-9958-775d0796b5e8.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice"},{"name":"7f52ec9d-4dfb-4b31-9958-775d0796b5e8.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string"}]</label_cache>
+        <latest_snapshot>1cd9c799db2167000d06717bbf9619a5</latest_snapshot>
+        <master_snapshot>a4298f55dba56700e9237ffdbf96199f</master_snapshot>
+        <name>Create Slack Channel for Case</name>
+        <outputs/>
+        <remote_trigger_id>d529cf55dba56700e9237ffdbf961934</remote_trigger_id>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 12:18:20</sys_created_on>
+        <sys_id>002f91d1db616700e9237ffdbf961901</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Create Slack Channel for Case</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_hub_flow_002f91d1db616700e9237ffdbf961901</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-11-02 20:04:32</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=002f91d1db616700e9237ffdbf961901"/>
+    <sys_variable_value action="delete_multiple" query="document_key=002f91d1db616700e9237ffdbf961901"/>
+</record_update>

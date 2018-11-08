@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Task Slack Management">14a4dadddbe16700e9237ffdbf96198e</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Create a slack channel for task resolution</description>
+        <internal_name>create_case_channel</internal_name>
+        <label_cache>[{"name":"{{action.private}}","label":"action➛Private Channel","type":"action","ref":""},{"name":"{{action.task_reference}}","label":"action➛Task Reference","type":"action","ref":"task"},{"name":"{{action.private_channel}}","label":"action➛Private Channel","type":"action","ref":""},{"name":"{{step[e34f75f2-b28a-4d1b-af5d-ceca7dc9b698].payload}}","label":"step➛Create Payload➛payload","type":"step","ref":""},{"name":"{{step[e2f9bb58-d80e-4b42-9025-9af0f5569949].status_code}}","label":"step➛POST Message➛Status Code","type":"step","ref":""},{"name":"{{step[e2f9bb58-d80e-4b42-9025-9af0f5569949].response_body}}","label":"step➛POST Message➛Response Body","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Status}}","label":"step➛Handle Response➛Status","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].C}}","label":"step➛Handle Response➛C","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Ch}}","label":"step➛Handle Response➛Ch","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelId}}","label":"step➛Handle Response➛ChannelId","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelI}}","label":"step➛Handle Response➛ChannelI","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Channel}}","label":"step➛Handle Response➛Channel","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelN}}","label":"step➛Handle Response➛ChannelN","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelNa}}","label":"step➛Handle Response➛ChannelNa","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelNam}}","label":"step➛Handle Response➛ChannelNam","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelName}}","label":"step➛Handle Response➛ChannelName","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].E}}","label":"step➛Handle Response➛E","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Er}}","label":"step➛Handle Response➛Er","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Err}}","label":"step➛Handle Response➛Err","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Erro}}","label":"step➛Handle Response➛Erro","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].Error}}","label":"step➛Handle Response➛Error","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorM}}","label":"step➛Handle Response➛ErrorM","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMe}}","label":"step➛Handle Response➛ErrorMe","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMes}}","label":"step➛Handle Response➛ErrorMes","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMess}}","label":"step➛Handle Response➛ErrorMess","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMessa}}","label":"step➛Handle Response➛ErrorMessa","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMessag}}","label":"step➛Handle Response➛ErrorMessag","type":"step","ref":""},{"name":"{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMessage}}","label":"step➛Handle Response➛ErrorMessage","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>b994ae99db256700e9237ffdbf9619e0</latest_snapshot>
+        <master_snapshot>54c7bd19dba16700e9237ffdbf96191b</master_snapshot>
+        <name>Create Task Channel</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 13:53:14</sys_created_on>
+        <sys_id>8ed4f995dba16700e9237ffdbf9619ee</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Create Task Channel</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_8ed4f995dba16700e9237ffdbf9619ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 17:21:54</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=8ed4f995dba16700e9237ffdbf9619ee"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8ed4f995dba16700e9237ffdbf9619ee"/>
+    <sys_element_mapping action="delete_multiple" query="id=8ed4f995dba16700e9237ffdbf9619ee"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>channel_id</field>
+        <id>8ed4f995dba16700e9237ffdbf9619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 14:05:38</sys_created_on>
+        <sys_id>23a73d19dba16700e9237ffdbf9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 14:05:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8ed4f995dba16700e9237ffdbf9619ee</table>
+        <value>{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelId}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>channel_name</field>
+        <id>8ed4f995dba16700e9237ffdbf9619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 14:05:38</sys_created_on>
+        <sys_id>aba73d19dba16700e9237ffdbf96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 14:05:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8ed4f995dba16700e9237ffdbf9619ee</table>
+        <value>{{step[86829afa-572a-41cf-8584-d5e91f18224e].ChannelName}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>8ed4f995dba16700e9237ffdbf9619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 14:05:38</sys_created_on>
+        <sys_id>6fa73d19dba16700e9237ffdbf96199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 14:05:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8ed4f995dba16700e9237ffdbf9619ee</table>
+        <value>{{step[86829afa-572a-41cf-8584-d5e91f18224e].ErrorMessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>8ed4f995dba16700e9237ffdbf9619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 14:05:38</sys_created_on>
+        <sys_id>e3a73d19dba16700e9237ffdbf9619a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 14:05:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8ed4f995dba16700e9237ffdbf9619ee</table>
+        <value>{{step[86829afa-572a-41cf-8584-d5e91f18224e].Status}}</value>
+    </sys_element_mapping>
+</record_update>

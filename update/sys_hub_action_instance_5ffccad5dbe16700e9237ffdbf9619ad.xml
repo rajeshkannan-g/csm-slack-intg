@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task Channel">54c7bd19dba16700e9237ffdbf96191b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>54c7bd19dba16700e9237ffdbf96191b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create Slack Channel for Case">002f91d1db616700e9237ffdbf961901</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:38:43</sys_created_on>
+        <sys_id>5ffccad5dbe16700e9237ffdbf9619ad</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_hub_action_instance_5ffccad5dbe16700e9237ffdbf9619ad</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-11-02 20:04:32</sys_updated_on>
+        <ui_id>01ac480f-d053-4bc4-aa69-25143ec4928e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5ffccad5dbe16700e9237ffdbf9619ad"/>
+    <sys_element_mapping action="delete_multiple" query="id=5ffccad5dbe16700e9237ffdbf9619ad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_reference</field>
+        <id>5ffccad5dbe16700e9237ffdbf9619ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 20:01:29</sys_created_on>
+        <sys_id>d8298f55dba56700e9237ffdbf96197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 20:01:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_54c7bd19dba16700e9237ffdbf96191b</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_reference</field>
+        <id>5ffccad5dbe16700e9237ffdbf9619ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:38:43</sys_created_on>
+        <sys_id>13fccad5dbe16700e9237ffdbf9619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 15:38:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8ed4f995dba16700e9237ffdbf9619ee</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+</record_update>

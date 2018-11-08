@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_cat_variable_model">
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a5de3a9ddb656700e9237ffdbf96195a</id>
+        <name>Create Slack Channel for Case</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 19:16:31</sys_created_on>
+        <sys_id>a1de3a9ddb656700e9237ffdbf96195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Slack Channel for Case</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_flow_cat_variable_model_a1de3a9ddb656700e9237ffdbf96195b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 19:16:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+</record_update>

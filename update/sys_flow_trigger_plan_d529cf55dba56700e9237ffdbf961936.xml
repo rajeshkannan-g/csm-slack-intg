@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_flow_trigger_plan">
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"d529cf55dba56700e9237ffdbf961936","name":"plan"}}</plan>
+        <plan_id>002f91d1db616700e9237ffdbf961901</plan_id>
+        <snapshot>1cd9c799db2167000d06717bbf9619a5</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 20:01:33</sys_created_on>
+        <sys_id>d529cf55dba56700e9237ffdbf961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d529cf55dba56700e9237ffdbf961934</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_flow_trigger_plan_d529cf55dba56700e9237ffdbf961936</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 20:01:33</sys_updated_on>
+        <trigger display_value="">d529cf55dba56700e9237ffdbf961934</trigger>
+    </sys_flow_trigger_plan>
+</record_update>

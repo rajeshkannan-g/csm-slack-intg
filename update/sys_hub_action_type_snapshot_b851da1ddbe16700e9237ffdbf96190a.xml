@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Task Slack Management">14a4dadddbe16700e9237ffdbf96198e</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Post task details to the associated slack channel.</description>
+        <internal_name>post_task_details</internal_name>
+        <label_cache>[{"name":"{{action.ah_username}}","label":"action➛Username","type":"action","ref":""},{"name":"{{action.ah_channel}}","label":"action➛Channel ID","type":"action","ref":""},{"name":"{{action.ah_icon}}","label":"action➛Icon","type":"action","ref":""},{"name":"{{action.ah_change}}","label":"action➛Incident","type":"action","ref":"incident"},{"name":"{{action.ah_additional_message}}","label":"action➛Additional Message","type":"action","ref":""},{"name":"{{action.ah_override_default_fields}}","label":"action➛Override Default Fields","type":"action","ref":""},{"name":"{{step[49f8810c-9ad8-4fa2-b1af-85cead8bfd1f].payload}}","label":"step➛Create Payload➛payload","type":"step","ref":""},{"name":"{{step[77df0e51-78f1-453b-8b7f-bccf7ad6379b].status_code}}","label":"step➛Post Message➛Status Code","type":"step","ref":""},{"name":"{{step[77df0e51-78f1-453b-8b7f-bccf7ad6379b].response_body}}","label":"step➛Post Message➛Response Body","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].S}}","label":"step➛Post Processing➛S","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].St}}","label":"step➛Post Processing➛St","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Sta}}","label":"step➛Post Processing➛Sta","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Stat}}","label":"step➛Post Processing➛Stat","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Statu}}","label":"step➛Post Processing➛Statu","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Status}}","label":"step➛Post Processing➛Status","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].E}}","label":"step➛Post Processing➛E","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Er}}","label":"step➛Post Processing➛Er","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Err}}","label":"step➛Post Processing➛Err","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Erro}}","label":"step➛Post Processing➛Erro","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Error}}","label":"step➛Post Processing➛Error","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorM}}","label":"step➛Post Processing➛ErrorM","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMe}}","label":"step➛Post Processing➛ErrorMe","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMes}}","label":"step➛Post Processing➛ErrorMes","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMess}}","label":"step➛Post Processing➛ErrorMess","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMessa}}","label":"step➛Post Processing➛ErrorMessa","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMessag}}","label":"step➛Post Processing➛ErrorMessag","type":"step","ref":""},{"name":"{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMessage}}","label":"step➛Post Processing➛ErrorMessage","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Post Task Details</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Post Task Details">b36f0a59dbe16700e9237ffdbf9619bc</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:57:41</sys_created_on>
+        <sys_id>b851da1ddbe16700e9237ffdbf96190a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Post Task Details</sys_name>
+        <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_b851da1ddbe16700e9237ffdbf96190a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 17:21:19</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b851da1ddbe16700e9237ffdbf96190a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b851da1ddbe16700e9237ffdbf96190a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>b851da1ddbe16700e9237ffdbf96190a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:57:44</sys_created_on>
+        <sys_id>7151da1ddbe16700e9237ffdbf9619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 15:57:44</sys_updated_on>
+        <value/>
+        <variable display_value="">3151da1ddbe16700e9237ffdbf9619b2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b851da1ddbe16700e9237ffdbf96190a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>b851da1ddbe16700e9237ffdbf96190a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:57:44</sys_created_on>
+        <sys_id>3d51da1ddbe16700e9237ffdbf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 15:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b851da1ddbe16700e9237ffdbf96190a</table>
+        <value>{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].ErrorMessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>b851da1ddbe16700e9237ffdbf96190a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-11-02 15:57:44</sys_created_on>
+        <sys_id>fd51da1ddbe16700e9237ffdbf9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-02 15:57:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b851da1ddbe16700e9237ffdbf96190a</table>
+        <value>{{step[8dd5578d-0717-4e3b-97c0-d75ef0d34a3c].Status}}</value>
+    </sys_element_mapping>
+</record_update>
