@@ -14,7 +14,7 @@
 		response.setStatus(400); //Bad Request
 		response.setBody({"error":"Invalid Request"});
 	}
-	gs.info('Slack Event Processor: ' + JSON.stringify(payloadObj));
+	gs.info('Slack Event REST API: ' + JSON.stringify(payloadObj));
 	if(!payloadObj || !payloadObj.token || gs.nil(payloadObj.token) || payloadObj.token != 'PnTeehYG19h8tORIBuM9sZdn') {
 		response.setContentType('application/json');
 		response.setStatus(400); //Bad Request
@@ -66,14 +66,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-11-02 17:57:01</sys_created_on>
         <sys_id>4e4c6e11db656700e9237ffdbf9619c2</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Process Event</sys_name>
         <sys_package display_value="CSM Slack Integration" source="x_snc_csm_slack">317e9191db616700e9237ffdbf9619fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="CSM Slack Integration">317e9191db616700e9237ffdbf9619fe</sys_scope>
         <sys_update_name>sys_ws_operation_4e4c6e11db656700e9237ffdbf9619c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-11-02 20:02:23</sys_updated_on>
+        <sys_updated_on>2018-11-08 12:20:38</sys_updated_on>
         <web_service_definition display_value="Slack Events">1dc8ee5ddb256700e9237ffdbf9619a8</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
